@@ -2,7 +2,7 @@ version: '3'
 
 services:
   postgres:
-    container_name: postgres
+    container_name: postgres_e_thing
     image: postgres:latest
     ports:
       - '5432:5432'
@@ -18,7 +18,7 @@ services:
       - postgres
 
   adminer:
-    container_name: adminer
+    container_name: adminer_e_thing
     image: adminer
     ports:
       - "8080:8080"
